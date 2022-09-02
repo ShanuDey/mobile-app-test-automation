@@ -92,9 +92,9 @@ export const config: Options.Testrunner = {
         'appium:orientation': 'PORTRAIT',
         'appium:automationName': 'UiAutomator2',
         // The path to the app
-        'appium:app': join(process.cwd(), './apps/TestApp.apk'),
+        'appium:app': join(process.cwd(), './apps/Todo-App-v1.1.1.apk'),
         // @ts-ignore
-        'appium:appWaitActivity': 'io.github.shanudey.MainActivity',
+        'appium:appWaitActivity': 'host.exp.exponent.MainActivity',
         'appium:newCommandTimeout': 240,
     }],
     //
