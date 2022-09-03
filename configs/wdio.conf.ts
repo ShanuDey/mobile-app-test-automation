@@ -52,7 +52,7 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './test/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -92,7 +92,7 @@ export const config: Options.Testrunner = {
         'appium:orientation': 'PORTRAIT',
         'appium:automationName': 'UiAutomator2',
         // The path to the app
-        'appium:app': join(process.cwd(), './apps/Todo-App-v1.1.1.apk'),
+        'appium:app': join(process.cwd(), './apps/Todo-App.apk'),
         // @ts-ignore
         'appium:appWaitActivity': 'host.exp.exponent.MainActivity',
         'appium:newCommandTimeout': 240,
@@ -173,7 +173,7 @@ export const config: Options.Testrunner = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/*.ts'],
+        require: ['./test/steps/*.ts'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
