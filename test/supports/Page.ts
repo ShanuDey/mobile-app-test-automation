@@ -6,7 +6,7 @@ export default class Page {
     }
 
     /**
-     * Wait for the login screen to be visible
+     * Wait for the page to be visible
      *
      * @param {boolean} isShown
      */
