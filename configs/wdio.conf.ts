@@ -87,7 +87,7 @@ export const config: Options.Testrunner = {
         // For W3C the appium capabilities need to have an extension prefix
         // http://appium.io/docs/en/writing-running-appium/caps/
         // This is `appium:` for all Appium Capabilities which can be found here
-        'appium:deviceName': 'emulator-5554',
+        'appium:deviceName': 'Android Emulator',
         'appium:platformVersion': '11.0',
         'appium:orientation': 'PORTRAIT',
         'appium:automationName': 'UiAutomator2',
