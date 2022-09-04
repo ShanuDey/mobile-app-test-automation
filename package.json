@@ -14,6 +14,7 @@
         "typescript": "^4.8.2"
     },
     "scripts": {
+        "report": "allure generate allure-results --clean && allure open",
         "start": "wdio run configs/wdio.conf.ts"
     }
 }
