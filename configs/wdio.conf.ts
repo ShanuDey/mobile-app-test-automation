@@ -295,8 +295,9 @@ export const config: Options.Testrunner = {
      * @param {number}             result.duration  duration of scenario in milliseconds
      * @param {Object}             context          Cucumber World object
      */
-    // afterStep: function (step, scenario, result, context) {
-    // },
+    afterStep: async function (step, scenario, result, context) {
+        await driver.takeScreenshot();
+    },
     /**
      *
      * Runs after a Cucumber Scenario.
